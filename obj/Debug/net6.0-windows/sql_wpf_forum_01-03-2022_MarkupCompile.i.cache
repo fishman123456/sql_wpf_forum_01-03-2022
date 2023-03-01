@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\profi\Documents\GitHub\sql_wpf_forum_01-03-2022\App.xaml
-11407045341
+21940794329
 
-51063001792
+61992341504
 209785116808
-MainWindow.xaml;
+MainWindow.xaml;Window1.xaml;
 
-False
+True
 
