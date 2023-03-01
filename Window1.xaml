@@ -25,12 +25,12 @@
         <Label Name="age" Grid.Row="4"  Content="возраст" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Label Name="group" Grid.Row="6"  Content="группа" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Label Name="grant" Grid.Row="8"  Content="стипендия" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <Label Name="add" Grid.Row="11"  Content="добавить" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <TextBox Name="name_t" TextWrapping="Wrap" Grid.Row="1" Text="TextBox" Width="auto"/>
-        <TextBox Name="so_name_t" TextWrapping="Wrap" Grid.Row="3" Text="TextBox" Width="auto"/>
-        <TextBox Name="age_t" TextWrapping="Wrap" Grid.Row="5" Text="TextBox" Width="auto"/>
-        <TextBox Name="group_t" TextWrapping="Wrap" Grid.Row="7" Text="TextBox" Width="auto"/>
-        <TextBox Name="grant_t" TextWrapping="Wrap" Grid.Row="9" Text="TextBox" Width="auto"/>
+        <Button Name="add" Grid.Row="11"  Content="добавить" />
+        <TextBox Name="name_t" TextWrapping="Wrap" Grid.Row="1"  Width="auto"/>
+        <TextBox Name="so_name_t" TextWrapping="Wrap" Grid.Row="3"  Width="auto"/>
+        <TextBox Name="age_t" TextWrapping="Wrap" Grid.Row="5"  Width="auto"/>
+        <TextBox Name="group_t" TextWrapping="Wrap" Grid.Row="7"  Width="auto"/>
+        <TextBox Name="grant_t" TextWrapping="Wrap" Grid.Row="9"  Width="auto"/>
 
 
     </Grid>
