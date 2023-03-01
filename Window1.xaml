@@ -25,7 +25,7 @@
         <Label Name="age" Grid.Row="4"  Content="возраст" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Label Name="group" Grid.Row="6"  Content="группа" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Label Name="grant" Grid.Row="8"  Content="стипендия" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <Button Name="add" Grid.Row="11"  Content="добавить" />
+        <Button Name="add" Grid.Row="11"  Content="добавить" Click="add_Click" />
         <TextBox Name="name_t" TextWrapping="Wrap" Grid.Row="1"  Width="auto"/>
         <TextBox Name="so_name_t" TextWrapping="Wrap" Grid.Row="3"  Width="auto"/>
         <TextBox Name="age_t" TextWrapping="Wrap" Grid.Row="5"  Width="auto"/>

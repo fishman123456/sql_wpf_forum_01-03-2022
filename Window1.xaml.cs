@@ -46,13 +46,17 @@ Integrated Security=True";
 
             //открываем соединение
             con.Open();
-                string query = "insert into students (studName, studFname, studAge, gropeName, grants" +
-                    "@studName, @studFname, @studAge, @gropeName, @grants";
+                string query = "insert into students (studName, studFname, studAge, gropeName, grants) " +
+                    "values (@studName, @studFname, @studAge, @gropeName, @grants)";
 
                 //создаем комманду на соединение
                 SqlCommand cmd = new SqlCommand(query, con);
 
+                cmd.Parameters.AddRange(GetSqlParameters());
+                cmd.ExecuteNonQuery();
+
                 con.Close();
+                MessageBox.Show("Данные успешно добавлены...");
             }
             catch (Exception ex)
             {
@@ -65,18 +69,23 @@ Integrated Security=True";
         {
         SqlParameter studName = new SqlParameter("@studName",SqlDbType.NVarChar);
             studName.Value = name_t.Text;
+
             SqlParameter studSone = new SqlParameter("@studFname", SqlDbType.NVarChar);
-            studName.Value = so_name_t.Text;
+            studSone.Value = so_name_t.Text;
+
             SqlParameter studAge = new SqlParameter("@studAge", SqlDbType.Int);
-            studName.Value = age_t.Text;
+            studAge.Value = Int32.Parse( age_t.Text);
+
             SqlParameter studGroup = new SqlParameter("@gropeName", SqlDbType.NVarChar);
-            studName.Value = group_t.Text;
+            studGroup.Value = group_t.Text;
+
             SqlParameter studGrant = new SqlParameter("@grants", SqlDbType.Int);
-            studName.Value = Int32.Parse (grant_t.Text);
+            studGrant.Value = Int32.Parse (grant_t.Text);
+
             return new SqlParameter[] { studName,studSone, studAge, studGroup, studGrant};
-                 
-     
-        
+
         }
+
+
     }
 }
